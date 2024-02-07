@@ -1,0 +1,9 @@
+{
+  "name": "action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "mudlet-map-binary-reader": "^0.5.3"
+  }
+}

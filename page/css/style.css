@@ -1,0 +1,351 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    padding: 10px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+h2 {
+    display: inline-block;
+    padding-left: 40px;
+    margin-right: 10px;
+    position: relative;
+    font-size: 23px;
+    top: 5px;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    left: -37px;
+    width: 90px;
+    top: -38px;
+}
+
+header {
+    border-bottom: 1px solid #cbcbcb;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    position: relative;
+    z-index: 5;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.map-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.map-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -75px;
+    padding-top: 75px;
+}
+
+.flag {
+    display: inline-flex;
+    align-items: center;
+}
+
+form {
+    display: inline-block;
+}
+
+.info-box {
+    background: rgba(var(--bs-light-rgb), 0.5);
+    border-radius: 5px;
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    width: 620px;
+    padding: 10px 20px;
+    display: none;
+    backdrop-filter: blur(3px) brightness(60%);
+}
+
+.info-box ul {
+    padding-left: 15px;
+}
+
+.info-box li {
+    list-style-type: none;
+}
+
+.user-data p {
+    margin-bottom: 5px;
+}
+
+.user-data p + p  {
+    margin-left: 10px;
+}
+
+.user-data .value {
+    font-size: 0.85em;
+    font-family: Courier, monospace;
+}
+
+canvas {
+    image-rendering: pixelated;
+    width: 100%;
+    height: 100%;
+}
+
+.dragging {
+    cursor: all-scroll;
+}
+
+.levels-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button.control > span,
+.control button > span {
+    padding-left: 10px;
+}
+
+.toasts {
+    position: absolute;
+    width: 95%;
+    bottom: 50px;
+    margin-left: 2%;
+    z-index: 99;
+}
+
+.toast {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.zoom-controls {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: white;
+    z-index: 99;
+}
+
+.progress-container {
+    position: absolute;
+    height: 3px;
+    margin-top: 2px;
+    margin-bottom: -5px;
+    z-index: 2;
+    width: 100%;
+    opacity: 0;
+}
+
+.progress {
+    height: 5px;
+    justify-content: center;
+}
+
+#help .modal-footer {
+    display: block;
+}
+
+h2 a,
+h2 a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.widget {
+    display: none;
+}
+
+.lang-label.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    min-width: auto;
+}
+
+.modal {
+    overflow-y: hidden !important;
+}
+
+.dropdown-item {
+    cursor: pointer;
+}
+
+.preview-container {
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    width: 400px;
+    height: 400px;
+    pointer-events: none;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid rgb(151, 151, 151);
+    backdrop-filter: blur(3px) brightness(60%);
+    opacity: 0;
+}
+
+.preview {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px) brightness(120%);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.preview-pan {
+    position: absolute;
+    border: 1px solid rgba(168, 39, 99, 0.618);
+    z-index: 2;
+    left: 0;
+}
+
+.preview-pan-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.preview-img {
+    position: absolute;
+    backdrop-filter: blur(3px) brightness(60%);
+}
+
+#versions {
+    width: 100px;
+}
+
+.btn .badge {
+    top: 0;
+}
+
+.version-number {
+    display: none;
+}
+
+mark {
+    background: none;
+    color: inherit;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.npc-autocomplete {
+    top: 90px;
+    left: 1rem;
+    right: 1rem;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.btn-check:focus + .btn-secondary,
+.btn-secondary:focus {
+    box-shadow: none;
+}
+
+.area-form {
+    width: 200px;
+}
+
+.nav-pills > button + button {
+    margin-left: 10px;
+}
+
+.path-box {
+    width: 18rem;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.path-box .badge {
+    cursor: pointer;
+}
+
+.path-box .badge:hover {
+    opacity: 0.75;
+}
+
+.small-color {
+    height: 1em;
+    border: 0;
+}
+
+.release-description {
+    white-space: pre;
+    font-family: monospace;
+    border: 1px solid;
+    padding: 20px;
+    margin: 20px 3px;
+    color: #CCC;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media all and (max-width: 1400px) {
+    button.control span, .control button > span {
+        display: none;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .control {
+        margin: 2px;
+    }
+}
