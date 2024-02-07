@@ -6,6 +6,7 @@ var _localStorage$getItem;
 /**
  * Page theme selector
  */
+const defaultTheme = "Sandstone"
 let templateSelector = document.querySelector("#template-selector");
 let currentTheme = (_localStorage$getItem = localStorage.getItem("theme")) !== null && _localStorage$getItem !== void 0 ? _localStorage$getItem : defaultTheme;
 let defaultDarkMode = true;
