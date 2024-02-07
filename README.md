@@ -17,3 +17,7 @@ Example map: https://delwing.github.io/arkadia-mapa/
 8. Go to repository *Settings* -> *Pages*. In *Build and deployment* section set `Srouce` as `Github Actions`
 
 Visit your page under `https://{repositoryOwner}.github.io/{repository}/` so in case if this example it is: https://delwing.github.io/online-mudlet-map-template/
+
+## Screenshot
+
+![screenshot](screenshot.png)
